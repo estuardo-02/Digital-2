@@ -50,17 +50,17 @@ void setup() {
 }
 //Repetir indefinidamente: 
 void loop() {
-  // Wait for the button press
+  // Esperar hasta que se presione boton
   while (digitalRead(button1Pin) == HIGH) {
-    delay(10); // Check the button state every 10ms
+    delay(10);
   }
 
-  // Button is pressed, start the LED sequence
+  // Inicio de secuencia
   digitalWrite(redLED, HIGH);    // Red light for 2 seconds
   delay(1000);
   digitalWrite(redLED, LOW);
 
-  // Blinking red for 1 seconds
+  // parpadeo
   for (int i = 0; i < 8; i++) {
     digitalWrite(redLED, HIGH);
     delay(125);
@@ -68,14 +68,14 @@ void loop() {
     delay(125);
   }
 
-  // Yellow for 2 seconds
+  // Amarillo por 1 segundo
   digitalWrite(redLED, HIGH);
   digitalWrite(greenLED, HIGH);
   delay(1000);
   digitalWrite(redLED, LOW);
   digitalWrite(greenLED, LOW);
 
-  // Green light until the button is pressed again
+  // Juego iniciado
   game_state = 0;
   while (game_state == 0) {
     game_state = wait_for_player();
@@ -109,21 +109,21 @@ int wait_for_player(){
   int buttonState2 = digitalRead(button2Pin);
 
   if (buttonState1 == LOW && buttonState2 == LOW) {
-    // Both buttons pressed at the same time
+    // los dos botones al mismo tiempo 
     return 0;
   } else if (buttonState1 == LOW) {
-    // Button 1 pressed first
+    // boton 1
     return 1;
   } else if (buttonState2 == LOW) {
-    // Button 2 pressed first
+    // boton 2
     return 2;
   } else {
-    // No button pressed
+    // ningún boton presionado
     return 0;
   }
 }
 void displayleds(int value, int player) {
-  byte patterns[] = {
+  byte patterns[] = { //array para contador de decada
     B00000000, // 0
     B00000001, // 1
     B00000011, // 2
