@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+<title>Parking a-lot</title>
+<meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style the header */
+header {
+  background-color: #CEE3FF;
+  padding: 30px;
+  text-align: center;
+  font-size: 35px;
+  color: white;
+}
+
+/* Create two columns/boxes that floats next to each other */
+nav {
+  float: left;
+  width: 40%;
+  height: 750px; /* only for demonstration, should be removed */
+  background: #8dbdfc;
+  padding: 70px;
+}
+
+
+article {
+  float: left;
+  padding: 20px;
+  width: 60%;
+  background-color: #378eff;
+  height: 750px; /* only for demonstration, should be removed */
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+  background-color: #CEE3FF;
+  padding: 10px;
+  text-align: center;
+  color: BLACK;
+}
+/* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+@media (max-width: 600px) {
+  nav, article {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+<header>
+    <img alt='Imagen del logo' src= 'https://lh4.googleusercontent.com/zPnKGWEg9Aeih6GpiRZzA6LLCmrUka9F7pqTXCVD8J0f-VxykoQDjk-u_NjmF_uSaR7DCvtSbvWLei8nt6dE8MtUuumZ2SvVMkAgWVlA2msYmsF0SDyy8K7c9ST2g5c72w=w1280'>
+</header>
+
+<section>
+  <nav>
+    <ul>
+        <style>table,th,td{border:2px solid #CEE3FF;border-collapse:collapse;
+
+            }
+            tr:nth-child(1) {
+            background-color: #CEE3FF;
+            }
+            </style>
+            <table style=width:100%>
+            <tr>
+            <th style=width:25%>
+            <p style=color:#666;font-family:verdana>Espacio de Parqueo</p>
+            </th>
+            <th style=width:10%>
+            <p style=color:#666;font-family:verdana>estado actual</p>
+            </th>
+            </tr>
+            <tr>
+            <td>
+            <p style=color:#666;font-family:verdana>Parqueo 1</p>
+            </td>
+            <td>
+            <p style=text-align:center>&#128308;</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p style=color:#666;font-family:verdana>Parqueo 2</p>
+            </td>
+            <td>
+            <p style=text-align:center>&#128308;</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p style=color:#666;font-family:verdana>Parqueo 3</p>
+            </td>
+            <td>
+            <p style=text-align:center>&#128309;</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p style=color:#666;font-family:verdana>Parqueo 4</p>
+            </td>
+            <td>
+            <p style=text-align:center>&#128308;</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p style=color:#666;font-family:verdana>Parqueo 5</p>
+            </td>
+            <td>
+            <p style=text-align:center>&#128308;</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p style=color:#666;font-family:verdana>Parqueo 6</p>
+            </td>
+            <td>
+            <p style=text-align:center>&#128309;</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p style=color:#666;font-family:verdana>Parqueo 7</p>
+            </td>
+            <td>
+            <p style=text-align:center>&#128309;</p>
+            </td>
+            </tr>
+            <tr>
+            <td>
+            <p style=color:#666;font-family:verdana>Parqueo 8</p>
+            </td>
+            <td>
+            <p style=text-align:center>&#128309;</p>
+            </td>
+            </tr>
+            </table>
+    </ul>
+  </nav>
+  
+  <article>
+    <h1 style='font-size:160%; color:#252525;' ><i>Actualizaciones en tiempo real</i></h1>
+    <p>Manten el control del los espacios de parqueo por medio del sitio web y el servidor de ESP32</p>
+    <p>mamadas</p>
+    <h1 style='font-size:160%; color:#252525; text-align:right' ><i>Mantén la calma</i></h1>
+    <style>.right{text-align:right}</style>
+    <div class=right>
+    <img alt='Mujer manejando' src= 'https://lh3.googleusercontent.com/Us-Z_bjPe39cIhKioa8807pCqfVEcIxSJfX6XSS-Nx4Vs_FG0ON_V2SbgObK56M2sZG_y_umAlPoZgghIj0PPkOAQyuZ3Ncm8KY5a46djSxogf-QvubbIwqc0cbrdEAiTQ=w1280'>
+    </div>
+    <p style ='text-align:right'>Deja que nosotros nos encarguemos de todo.</p>
+</article>
+</section>
+
+<footer>
+  <p>Última actualización: NA/NA/NA</p>
+</footer>
+
+</body>
+</html>
